@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Singh - Portfolio</title>
+
+    <!-- AOS Library for Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- 🌟 Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Rohit Singh</div>
+            
+            <!-- Modern Hamburger Icon -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button id="darkModeToggle" aria-label="Toggle Dark Mode">🌙</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    <!-- 🌟 Hero Section -->
+    <section id="home" class="hero">
+        <div class="quantum-grid"></div>
+        <div class="container">
+            <div class="hero-text" data-aos="fade-right">
+                <h1>Hello! I'm <span>Rohit Singh</span></h1>
+                <p>I'm a passionate Full-Stack Developer & Android app dev 🚀</p>
+                <a id="resumeDownload" href="my_resume.pdf" download="my_resume.pdf" class="btn-primary">
+                    📄 Download Resume
+                </a>
+                <a href="https://buymeacoffee.com/yasuo72" target="_blank" class="btn-primary" style="margin-left: 10px;">Buy Me a Coffee</a>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <img src="image.png" alt="Rohit">
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 About Me Section -->
+    <section id="about" class="section" data-aos="fade-up">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a full-stack developer with expertise in modern web technologies and Android App development (Learning AI/ML)...</p>
+            <div class="about-info">
+                <div class="info-box" data-aos="zoom-in">
+                    <h3>0+ Years</h3>
+                    <p>Experience</p>
+                </div>
+                <div class="info-box" data-aos="zoom-in">
+                    <h3>10+</h3>
+                    <p>Projects Completed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 Education Section -->
+    <section id="education" class="section" data-aos="fade-up">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-timeline">
+                <!-- Education Item 1 -->
+                <div class="education-item left" data-aos="fade-right">
+                    <h3>SSC 10th & HSC 12th (Sci)</h3>
+                    <p class="duration">2020 - 2022</p>
+                    <p class="institution">St Mary's School, Vapi, Gujarat, India</p>
+                </div>
+                <!-- Education Item 2 -->
+                <div class="education-item right" data-aos="fade-left">
+                    <h3>Bachelor of Technology (B-Tech CSE)</h3>
+                    <p class="duration">2022 - 2026</p>
+                    <p class="institution">Parul University, Vadodara, Gujarat, India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 Skills Section -->
+    <section id="skills" class="section" data-aos="fade-up">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <!-- Design Tools -->
+                <div class="skill-category" data-aos="zoom-in">
+                    <h3>Design Tools I Use</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-plain.svg" alt="Adobe XD" title="Adobe XD" width="40" />
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" title="Figma" width="40" />
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- Technologies -->
+                <div class="skill-category" data-aos="zoom-in">
+                    <h3>Technologies I Use</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title="HTML5" width="40" />
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title="CSS3" width="40" />
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript" width="40" />
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" width="40" />
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" title="Flask/Django" width="40" />
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" title="Bootstrap" width="40" />
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="ReactJS" width="40" />
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" alt="Redux" title="Redux" width="40" />
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="Firebase" title="Firebase" width="40" />
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="NextJS" title="NextJS" width="40" />
+                        </div>
+                        <!-- Add the rest similarly... -->
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" title="GitHub" width="40" />
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+
+                <!-- Development & Productivity Tools -->
+                <div class="skill-category" data-aos="zoom-in">
+                    <h3>Development & Productivity Tools I Use</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="Visual Studio Code" title="Visual Studio Code" width="40" />
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="GitLab" title="GitLab" width="40" />
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" title="GitHub" width="40" />
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://www.vectorlogo.zone/logos/notionhq/notionhq-icon.svg" alt="Notion" title="Notion" width="40" />
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman" title="Postman" width="40" />
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" alt="Pycharm" title="Pycharm" width="40" />
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" alt="Android Studio" title="Android Studio" width="40" />
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter Notebook" title="Jupyter Notebook" width="40" />
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Gnu-bash-logo.svg" alt="Shell Scripting" title="Shell Scripting" width="40" />
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1: Expense Tracker -->
+                <div class="project-card" data-aos="zoom-in">
+                    <img src="https://github.com/yasuo72/expense-manager-app/blob/main/docs/images/splash.png?raw=true" alt="Expense Tracker Screenshot" class="project-image" style="width: 100%; border-radius: 10px;" />
+                    <h3>Expense Tracker</h3>
+                    <p>Solo project made from scratch</p>
+                    <div class="technologies" style="display: flex; flex-wrap: wrap; gap: 10px; margin: 10px 0;">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin" title="Kotlin" width="30" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android" title="Android" width="30" />
+    
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite" title="SQLite" width="30" />
+    <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="Firebase" title="Firebase" width="30" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" title="Figma" width="30" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" title="Node.js" width="30" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" title="Express.js" width="30" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title="Git" width="30" />
+                    </div>
+                    <div class="actions" style="margin-top: 10px;">
+                        <a href="" target="_blank">Download & preview</a>
+                        <a href="https://github.com/yasuo72/expense-manager-app.git" target="_blank">See GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+
+                <!-- Project 2: HabitiQ -->
+                <div class="project-card" data-aos="zoom-in">
+                    <img src="https://github.com/yasuo72/assests/blob/main/WhatsApp%20Image%202025-01-31%20at%2022.34.26_55301c5a.png?raw=true" style="width: 100%; border-radius: 10px;" />
+                    <h3>HabitiQ</h3>
+                    <p>Worked on Full-Stack(+Ai)</p>
+                    <div class="technologies" style="display: flex; flex-wrap: wrap; gap: 10px; margin: 10px 0;">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript" width="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" title="Bootstrap" width="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.js" title="React.js" width="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" title="Next.js" width="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" alt="Redux" title="Redux" width="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt="GraphQL" title="GraphQL" width="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" title="Firebase" width="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title="Git" width="30" />
+                    </div>
+                    <div class="actions" style="margin-top: 10px;">
+                        <a href="habitiq.vercel.app" target="_blank">Go to HabitiQ</a>
+                        <a href="https://github.com/yasuo72/HabitiQ.git" target="_blank">See GitHub</a>
+                    </div>
+                </div>
+                
+                <!-- Project 2: HabitiQ -->
+                <div class="project-card" data-aos="zoom-in">
+                    
+                    
+                    <!-- Add Image Section -->
+                    <div class="project-image">
+                        <img src="https://github.com/yasuo72/assests/raw/main/Screenshot%202025-03-12%20220432.png?raw=true" alt="Image Recognition Chatbot Screenshot" width="90%"  />
+                        <h3>Image-Recognition-Chatbot</h3>
+                    <p>Work on Ai model & frontend</p>
+                    </div>
+                
+                    <div class="technologies" style="display: flex; flex-wrap: wrap; gap: 10px; margin: 10px 0;">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript" width="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" title="Bootstrap" width="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" width="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" title="TensorFlow" width="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg" alt="Keras" title="Keras" width="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV" title="OpenCV" width="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" title="Flask" width="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch" title="PyTorch" width="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/json/json-original.svg" alt="JSON" title="JSON" width="30" />
+                    </div>
+                    
+                    <div class="actions">
+                        <a href="https://github.com/yasuo72/Image-reco-chatbot" target="_blank">Go to Image-Recognition-Chatbot</a>
+                        <a href="https://github.com/yasuo72/Image-reco-chatbot" target="_blank">See GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="zoom-in">
+                    
+                
+                    <!-- Project Image -->
+                    <div class="project-image">
+                        <img src="https://github.com/yasuo72/assests/blob/main/Screenshot%202025-03-11%20014154.png?raw=true" alt="AI Voice Assistant (Buddy)" width="100%" />
+                        <h3>B.U.D.D.Y AI Assistant 🤖</h3>
+                    <p>Worked on Desktop Voice Assistant using AI</p>
+                    </div>
+                
+                    <!-- Technologies Used -->
+                    <div class="technologies" style="display: flex; flex-wrap: wrap; gap: 10px; margin: 10px 0;">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" width="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" title="Flask" width="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch" title="PyTorch" width="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" title="TensorFlow" width="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg" alt="Keras" title="Keras" width="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/json/json-original.svg" alt="JSON" title="JSON" width="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch" title="PyTorch" width="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title="Git" width="30" />
+                    </div>
+                
+                    <!-- Action Buttons -->
+                    <div class="actions">
+                        <a href="https://github.com/yasuo72/Buddy-The-Voice-Assistant.git" target="_blank">Go to Buddy</a>
+                        <a href="https://github.com/yasuo72/Buddy-The-Voice-Assistant.git" target="_blank">See GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="zoom-in">
+                    
+                
+                    <!-- Project Screenshots -->
+                    <div class="project-image-grid">
+                        <img src="https://github.com/user-attachments/assets/2ece3f4d-b7a0-4f70-af35-1dd63e07fb29" alt="QuizZone Screenshot 1" width="20%">
+                        <img src="https://github.com/user-attachments/assets/9dcf859c-f0da-4d72-a7b0-af6251152656" alt="QuizZone Screenshot 2" width="20%">
+                        <img src="https://github.com/user-attachments/assets/7d947294-a4f0-4bab-aad1-9b4b397e1645" alt="QuizZone Screenshot 3" width="20%">
+                        <img src="https://github.com/user-attachments/assets/afaf20e1-5dc4-4add-b24b-b1a2f0a9eb36" alt="QuizZone Screenshot 4" width="20%">
+                        <img src="https://github.com/user-attachments/assets/8c7b739a-90d9-41f4-8759-22895e40d04a" alt="QuizZone Screenshot 5" width="20%">
+                        <img src="https://github.com/user-attachments/assets/66b57c2d-559e-4986-998f-c60947ad1857" alt="QuizZone Screenshot 6" width="20%">
+                        <img src="https://github.com/user-attachments/assets/1e792152-af18-4681-88c0-6ee93b5c98bf" alt="QuizZone Screenshot 7" width="20%">
+                        <img src="https://github.com/user-attachments/assets/e8749784-4525-4cdc-9faa-570620c925f1" alt="QuizZone Screenshot 8" width="20%">
+                        <img src="https://github.com/user-attachments/assets/6691ffbe-f2ee-4232-9ecc-1b98a92d08c6" alt="QuizZone Screenshot 9" width="0%">
+                        <h3>QuizZone 🧠</h3>
+                    <p>Online quiz app with leaderboard, categories, and Firebase integration</p>
+                    </div>
+                
+                    <!-- Technologies -->
+                    <div class="technologies" style="display: flex; flex-wrap: wrap; gap: 10px; margin: 10px 0;">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin" title="Kotlin" width="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android" title="Android (XML)" width="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" title="Firebase" width="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite" title="SQLite" width="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title="Git" width="30" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Figma" title="Figma" width="30" height="30" />
+                        <img src="https://img.icons8.com/external-flat-juicy-fish/60/null/external-api-web-development-flat-flat-juicy-fish.png" alt="Trivia API" title="Trivia API" width="30" />
+                    </div>
+                    
+                
+                    <!-- Action Buttons -->
+                    <div class="actions">
+                        <a href="https://github.com/yasuo72" target="_blank">View Project</a>
+                        <a href="https://github.com/yasuo72" target="_blank">See GitHub</a>
+                    </div>
+                </div>
+                
+                
+                
+    </section>
+
+    <!-- 🌟 Certificates Section -->
+    <section id="certificates" class="section">
+        <div class="container">
+            <h2>Certificates</h2>
+            <div class="certificates-grid">
+                <!-- Certificate 1 -->
+                <div class="certificate-card" data-aos="zoom-in">
+                    <h3>The Complete JavaScript Course</h3>
+                    <p class="issuer">Udemy</p>
+                    <p>2020: From Zero to Expert!</p>
+                    <a href="#" class="view-link">View</a>
+                </div>
+                <!-- Certificate 2 -->
+                <div class="certificate-card" data-aos="zoom-in">
+                    <h3>Flutter UI Designer</h3>
+                    <p class="issuer">FreeCodeCamp</p>
+                    <p>Front End Libraries</p>
+                    <a href="#" class="view-link">View</a>
+                </div>
+                <!-- Certificate 3 -->
+                <div class="certificate-card" data-aos="zoom-in">
+                    <h3>React.js Essential Training</h3>
+                    <p class="issuer">LinkedIn</p>
+                    <p>Understanding Redux: A Beginner's Guide To State Management</p>
+                    <a href="#" class="view-link">View</a>
+                </div>
+
+                <div class="certificate-card" data-aos="zoom-in">
+                    <h3>Vadodara Hackathon 5.0</h3>
+                    <p class="issuer">Parul University</p>
+                    <p>2024: Leader of Team "Predictors" & Finalist(SIH)</p>
+                    <a href="https://media-hosting.imagekit.io//a60104a7f9fd4fa7/IMG_20240922_023600.jpg?Expires=1835477214&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=dvd68gERss8hUgy~4BDvjcfouIIGfrd~07caykvCAksr3SFzXj2L-8FSDqPM2JEOeCxtjydXYCQjLgF-I-yd3YZp~XW63YOFenONG9HBVFhwAVq4i0yRj7kaypE6qfb1vBNW1C~kz-FfVM8-hDCjMqUEky-fqaa1egjfAKPD8moB-6U5Cck1tdrZ~Vhbr5MDn5C1sDrI0XDWzgsepnkI-mxF4VRqQoBL41b3~ka~ZvFLvYKS1dZU1OsyIxfw1pvFvDygKBWit8KZrbPH96tY-kG0z1bt54f0TLwoYncHcfiLCsnPo3kVZRERa2ufFUWI6na1hKLG-AtfZzPAr0q0iQ__" class="view-link">View</a>
+                </div>
+
+                <div class="certificate-card" data-aos="zoom-in">
+                    <h3>Parul Hackathon 2.0</h3>
+                    <p class="issuer">Parul University</p>
+                    <p>2025: Leader of Team "Ak47"</p>
+                    <a href="https://media-hosting.imagekit.io//fc12189437604e5e/IMG-20250302-WA0006[1].jpg?Expires=1835477763&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=MUOKsQKLCIRvDn38tcZ0~WDkJsE8oj0ArwUxVVnV8IbseJk42XjyKgI9gmw6vvMBvSevvNZvvzFZt-TG01hVBNDNK6-U5Te~R9LeI74TsQnP5vEnNWLh39Ld9IjxlKG7mIGx5FZUFBOorRCh8x~DVQwloo0yzZSJBDieqTt1Hn1FtuwcNeujRkl0nWWBQrByPHEod4JiLPB5UlgAcm-wGjznR-dx877gCuHFgjlNCZEc4yC9P2FrbJayR4NA8CXD7biRwTGc5BSOlzuMQvhy~kG2Q9efOXb1grIDYYt8VJ~akq-KzAhHutl7SDE7Fv6KTfdublhTL30RJgkBFXfG~Q__" class="view-link">View</a>
+                </div>
+
+                <div class="certificate-card" data-aos="zoom-in">
+                    <h3>Python (Flask, Django)</h3>
+                    <p class="issuer">Microsoft</p>
+                    <p>Understanding Routing and API Gateways</p>
+                    <a href="#" class="view-link">View</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container2">
+            <h2>Contact Me</h2>
+            <form id="contactForm" action="https://formsubmit.co/rs965198@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name">
+                <input type="email" name="email" placeholder="Your Email" required aria-label="Your Email">
+                <textarea name="message" placeholder="Your Message" required aria-label="Your Message"></textarea>
+    
+                <!-- Hidden fields for extra customization -->
+                <input type="hidden" name="_subject" value="New Contact Form Submission!">
+                <input type="hidden" name="_autoresponse" value="Thank you for reaching out! I'll get back to you soon.">
+                <input type="hidden" name="_template" value="table">
+    
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+    
+            <!-- Thank You Message (Initially Hidden) -->
+            <p id="thankYouMessage" style="display: none; color: green; font-weight: bold; margin-top: 10px;">
+                ✅ Thank you for contacting me! I'll get back to you soon.
+            </p>
+        </div>
+    </section>
+
+    <!-- 🌟 Connect With Me Section -->
+    <section id="connect" class="section" data-aos="fade-up">
+        <div class="container3">
+            <h2>Connect With Me</h2>
+            <div class="social-links">
+                <a href="https://github.com/yasuo72" target="_blank" class="btn-primary">GitHub</a>
+                <a href="https://linkedin.com/in/rohit-singh-47b9a0302/" target="_blank" class="btn-primary">LinkedIn</a>
+                <a href="https://twitter.com/Rohitsi12148892" target="_blank" class="btn-primary">Twitter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 Footer -->
+    <footer>
+        <p>&copy; 2025 Rohit Singh. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+    
+</body>
+</html>
