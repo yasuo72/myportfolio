@@ -58,13 +58,12 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
 }
 
 /* 🌟 Navigation */
-/* Navigation Styles */
-
 /* Header Styles */
-/* Header Glass Styling */
 header {
     position: fixed;
     top: 0;
@@ -99,10 +98,29 @@ nav {
     -webkit-text-fill-color: transparent;
 }
 
+/* 🌐 Responsive Header */
+@media (max-width: 768px) {
+    header {
+        padding: 0 1.5rem;
+        height: 70px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}
+
+
 /* Nav Links */
 .nav-links {
     display: flex;
-    gap: 1.3rem;
+    gap: 0.6rem;
     font-size: 18px;
     list-style: none;
     margin-left: auto;
@@ -145,8 +163,7 @@ nav {
     height: 18px;
     cursor: pointer;
     margin-left: auto;
-    margin-right: 20px;
-    z-index: 1100;
+    z-index: 1400;
 }
 
 .hamburger span {
@@ -160,7 +177,7 @@ nav {
 @media (max-width: 768px) {
     nav {
         flex-direction: row;
-        justify-content: 0px;
+        justify-content: space-between;
     }
 
     .hamburger {
@@ -205,6 +222,7 @@ nav {
     padding-top: 80px;
     background: linear-gradient(45deg, var(--bg-color) 60%, rgba(108, 99, 255, 0.1));
     overflow: hidden;
+    width: 100%;
 }
 
 .hero::before {
@@ -221,11 +239,7 @@ nav {
     );
     transform: translate(-50%, -50%);
     animation: quantum-pulse 8s ease-in-out infinite;
-}
-
-@keyframes quantum-pulse {
-    0%, 100% { transform: translate(-50%, -50%) scale(1); }
-    50% { transform: translate(-50%, -50%) scale(1.2); }
+    z-index: 0;
 }
 
 .hero .container {
@@ -236,6 +250,7 @@ nav {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
+    z-index: 1;
 }
 
 .hero-text h1 {
@@ -255,11 +270,13 @@ nav {
     position: relative;
     border-radius: 50%;
     overflow: hidden;
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1/1;
     background: var(--glass-bg);
     backdrop-filter: blur(10px);
     border: 2px solid rgba(0, 0, 0, 0.1);
+    justify-self: center;
 }
 
 .hero-image img {
@@ -272,6 +289,23 @@ nav {
 
 .hero-image:hover img {
     filter: grayscale(0);
+}
+
+/* 🔽 Responsive Fixes */
+@media (max-width: 768px) {
+    .hero .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-image {
+        margin-top: 2rem;
+        width: 80%;
+    }
 }
 
 /* Button Styles */
@@ -289,6 +323,7 @@ nav {
 .btn-primary:hover {
     transform: translateY(-3px);
 }
+
 
 /* About Section */
 .about-info {
