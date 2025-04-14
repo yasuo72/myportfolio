@@ -145,6 +145,7 @@ nav {
     height: 18px;
     cursor: pointer;
     margin-left: auto;
+    margin-right: 20px;
     z-index: 1100;
 }
 
@@ -156,11 +157,10 @@ nav {
     border-radius: 2px;
 }
 
-/* Responsive Nav Styles */
 @media (max-width: 768px) {
     nav {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: 0px;
     }
 
     .hamburger {
@@ -172,14 +172,19 @@ nav {
         top: 59px;
         left: -100%;
         flex-direction: column;
-        background-color: var(--bg-color);
-        background: #00000021;
-        width: 30%;
-        
+        width: 40%; /* More space for touch interactions */
+        height: auto;
         padding: 20px 0;
-        transition: left 0.3s ease-in-out;
         text-align: center;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+
+        /* Glassmorphism effect */
+        backdrop-filter: blur(12px);
+        background: rgba(255, 255, 255, 0.25); /* or rgba(0, 0, 0, 0.2) for dark mode */
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+        transition: left 0.3s ease-in-out;
+        z-index: 999;
     }
 
     .nav-links.active {
